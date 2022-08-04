@@ -1,0 +1,1066 @@
+{
+  "info": {
+    "_postman_id": "f4ade5ee-335f-43bb-8448-6bf552fa84ce",
+    "name": "OpenAPI definition",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "8806078"
+  },
+  "item": [
+    {
+      "name": "v1",
+      "item": [
+        {
+          "name": "currency",
+          "item": [
+            {
+              "name": "search/by",
+              "item": [
+                {
+                  "name": "Get currency by symbol",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/search/by/symbol?symbol=sunt deserunt aute",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "search",
+                        "by",
+                        "symbol"
+                      ],
+                      "query": [
+                        {
+                          "key": "symbol",
+                          "value": "sunt deserunt aute",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/v1/currency/search/by/symbol?symbol=sunt deserunt aute",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "v1",
+                            "currency",
+                            "search",
+                            "by",
+                            "symbol"
+                          ],
+                          "query": [
+                            {
+                              "key": "symbol",
+                              "value": "sunt deserunt aute"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": -95721603,\n  \"name\": \"dolor magna reprehenderit Excepteur cupidatat\",\n  \"symbol\": \"cupidatat dolore aliqua elit\",\n  \"currentPrice\": -83664173.95765762\n}"
+                    }
+                  ]
+                },
+                {
+                  "name": "Get current by name",
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/search/by/name?name=sunt deserunt aute",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "search",
+                        "by",
+                        "name"
+                      ],
+                      "query": [
+                        {
+                          "key": "name",
+                          "value": "sunt deserunt aute",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "response": [
+                    {
+                      "name": "OK",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/v1/currency/search/by/name?name=sunt deserunt aute",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "v1",
+                            "currency",
+                            "search",
+                            "by",
+                            "name"
+                          ],
+                          "query": [
+                            {
+                              "key": "name",
+                              "value": "sunt deserunt aute"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "body": "{\n  \"id\": -95721603,\n  \"name\": \"dolor magna reprehenderit Excepteur cupidatat\",\n  \"symbol\": \"cupidatat dolore aliqua elit\",\n  \"currentPrice\": -83664173.95765762\n}"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Edit a Currency",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"sint aliqu\",\n  \"price\": -62699447.80128909,\n  \"symbol\": \"ali\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/v1/currency/edit/:currencyId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "currency",
+                    "edit",
+                    ":currencyId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "currencyId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"name\": \"sint aliqu\",\n  \"price\": -62699447.80128909,\n  \"symbol\": \"ali\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/edit/:currencyId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "edit",
+                        ":currencyId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "currencyId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": -95721603,\n  \"name\": \"dolor magna reprehenderit Excepteur cupidatat\",\n  \"symbol\": \"cupidatat dolore aliqua elit\",\n  \"currentPrice\": -83664173.95765762\n}"
+                }
+              ]
+            },
+            {
+              "name": "Add a Currency",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"sint aliqu\",\n  \"price\": -62699447.80128909,\n  \"symbol\": \"ali\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/v1/currency/add",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "currency",
+                    "add"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"name\": \"sint aliqu\",\n  \"price\": -62699447.80128909,\n  \"symbol\": \"ali\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/add",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "add"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": -95721603,\n  \"name\": \"dolor magna reprehenderit Excepteur cupidatat\",\n  \"symbol\": \"cupidatat dolore aliqua elit\",\n  \"currentPrice\": -83664173.95765762\n}"
+                }
+              ]
+            },
+            {
+              "name": "Fetch All Currency",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/currency/all?page=25827941&size=53850111&sort=[\"cupidatat amet\",\"pariatur ut labore anim elit\"]",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "currency",
+                    "all"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "25827941",
+                      "description": "(Required) "
+                    },
+                    {
+                      "key": "size",
+                      "value": "53850111",
+                      "description": "(Required) "
+                    },
+                    {
+                      "key": "sort",
+                      "value": "[\"cupidatat amet\",\"pariatur ut labore anim elit\"]",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/all?page=<integer>&size=<integer>&sort=<string>,<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "all"
+                      ],
+                      "query": [
+                        {
+                          "key": "page",
+                          "value": "<integer>"
+                        },
+                        {
+                          "key": "size",
+                          "value": "<integer>"
+                        },
+                        {
+                          "key": "sort",
+                          "value": "<string>,<string>"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"id\": -86934729,\n    \"name\": \"velit dolor occaecat\",\n    \"symbol\": \"Excepteur ipsum reprehenderit in\",\n    \"currentPrice\": 8312517.031037241\n  },\n  {\n    \"id\": -91389617,\n    \"name\": \"et\",\n    \"symbol\": \"mollit laboris ut ea dolor\",\n    \"currentPrice\": 60828564.3339591\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "Remove a Currency",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/currency/remove/:currencyId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "currency",
+                    "remove",
+                    ":currencyId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "currencyId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/currency/remove/:currencyId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "currency",
+                        "remove",
+                        ":currencyId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "currencyId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": -95721603,\n  \"name\": \"dolor magna reprehenderit Excepteur cupidatat\",\n  \"symbol\": \"cupidatat dolore aliqua elit\",\n  \"currentPrice\": -83664173.95765762\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "alert",
+          "item": [
+            {
+              "name": "Edit an Alert",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"currencySymbol\": \"magna\",\n  \"targetedPrice\": 53693709.27466655,\n  \"userId\": 29268935\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/edit/:alertId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "edit",
+                    ":alertId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "alertId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"currencySymbol\": \"magna\",\n  \"targetedPrice\": 53693709.27466655,\n  \"userId\": 29268935\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/edit/:alertId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "edit",
+                        ":alertId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "alertId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": 80258416,\n  \"currencySymbol\": \"sed\",\n  \"status\": \"in quis ad magna\",\n  \"targetedPrice\": -39686542.99718235,\n  \"userId\": -42498978\n}"
+                }
+              ]
+            },
+            {
+              "name": "Cancel an Alert",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/cancel/:alertId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "cancel",
+                    ":alertId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "alertId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/cancel/:alertId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "cancel",
+                        ":alertId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "alertId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": 80258416,\n  \"currencySymbol\": \"sed\",\n  \"status\": \"in quis ad magna\",\n  \"targetedPrice\": -39686542.99718235,\n  \"userId\": -42498978\n}"
+                }
+              ]
+            },
+            {
+              "name": "Create an Alert",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"currencySymbol\": \"magna\",\n  \"targetedPrice\": 53693709.27466655,\n  \"userId\": 29268935\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/add",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "add"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"currencySymbol\": \"magna\",\n  \"targetedPrice\": 53693709.27466655,\n  \"userId\": 29268935\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/add",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "add"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": 80258416,\n  \"currencySymbol\": \"sed\",\n  \"status\": \"in quis ad magna\",\n  \"targetedPrice\": -39686542.99718235,\n  \"userId\": -42498978\n}"
+                }
+              ]
+            },
+            {
+              "name": "Acknowledge an Alert",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/accept/:alertId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "accept",
+                    ":alertId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "alertId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/accept/:alertId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "accept",
+                        ":alertId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "alertId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": 80258416,\n  \"currencySymbol\": \"sed\",\n  \"status\": \"in quis ad magna\",\n  \"targetedPrice\": -39686542.99718235,\n  \"userId\": -42498978\n}"
+                }
+              ]
+            },
+            {
+              "name": "Fetch all Alert for a particular user",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/all/:userId?page=<integer>&size=<integer>&sort=[\"<string>\",\"<string>\"]",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "all",
+                    ":userId"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    },
+                    {
+                      "key": "size",
+                      "value": "<integer>",
+                      "description": "(Required) "
+                    },
+                    {
+                      "key": "sort",
+                      "value": "[\"<string>\",\"<string>\"]",
+                      "description": "(Required) "
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "key": "userId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/all/:userId?page=<integer>&size=<integer>&sort=<string>,<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "all",
+                        ":userId"
+                      ],
+                      "query": [
+                        {
+                          "key": "page",
+                          "value": "<integer>"
+                        },
+                        {
+                          "key": "size",
+                          "value": "<integer>"
+                        },
+                        {
+                          "key": "sort",
+                          "value": "<string>,<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "key": "userId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "[\n  {\n    \"id\": -51122353,\n    \"currencySymbol\": \"magna Lorem\",\n    \"status\": \"ullamco Ut\",\n    \"targetedPrice\": 89498507.86995482,\n    \"userId\": 77763623\n  },\n  {\n    \"id\": -33978901,\n    \"currencySymbol\": \"dolor culpa quis eiusmod ut\",\n    \"status\": \"adipisicing ut aliquip cupidatat culpa\",\n    \"targetedPrice\": -63601000.54828637,\n    \"userId\": 19319930\n  }\n]"
+                }
+              ]
+            },
+            {
+              "name": "Remove an Alert",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/alert/remove/:alertId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "alert",
+                    "remove",
+                    ":alertId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "alertId",
+                      "value": "-4575189",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/v1/alert/remove/:alertId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "v1",
+                        "alert",
+                        "remove",
+                        ":alertId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "alertId",
+                          "value": "-4575189",
+                          "description": "(Required) "
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"id\": 80258416,\n  \"currencySymbol\": \"sed\",\n  \"status\": \"in quis ad magna\",\n  \"targetedPrice\": -39686542.99718235,\n  \"userId\": -42498978\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fetch All Users",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/v1/users/all?page=<integer>&size=<integer>&sort=[\"<string>\",\"<string>\"]",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "users",
+                "all"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "key": "size",
+                  "value": "<integer>",
+                  "description": "(Required) "
+                },
+                {
+                  "key": "sort",
+                  "value": "[\"<string>\",\"<string>\"]",
+                  "description": "(Required) "
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/v1/users/all?page=<integer>&size=<integer>&sort=<string>,<string>",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "users",
+                    "all"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "size",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "<string>,<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n  {\n    \"userId\": -87285808,\n    \"userName\": \"consectetur mollit consequat q\"\n  },\n  {\n    \"userId\": -90839918,\n    \"userName\": \"aliquip\"\n  }\n]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ]
+}

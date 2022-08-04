@@ -1,9 +1,7 @@
 # How to run
 
 - Ensure you have docker Running
-- Clone the repo
-- Switch to Branch: Abubakar_Bayz_Tracker
-- Run **command:** cd BayzTracker
+- Run **command:** cd BTracker
 - Run **command:** mvn package
 - Run **command:** docker-compose up
 - Endpoints can be accessed via BASE_URL: http://localhost:8080
