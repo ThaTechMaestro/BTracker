@@ -1,2 +1,37 @@
-.DS_Store
 .idea
+.DS_Store
+BayzTracker.iml
+
+BayzTracker/HELP.md
+BayzTracker/target/
+BayzTracker/!.mvn/wrapper/maven-wrapper.jar
+BayzTracker/!**/src/main/**/target/
+BayzTracker/!**/src/test/**/target/
+
+### STS ###
+BayzTracker/.apt_generated
+BayzTracker/.classpath
+BayzTracker/.factorypath
+BayzTracker/.project
+BayzTracker/.settings
+BayzTracker/.springBeans
+BayzTracker/.sts4-cache
+
+### IntelliJ IDEA ###
+BTracker/.idea
+BTracker/*.iws
+BTracker/*.iml
+BTracker/*.ipr
+
+### NetBeans ###
+BTracker/nbproject/private/
+BTracker/nbbuild/
+BTracker/dist/
+BTracker/nbdist/
+BTracker/.nb-gradle/
+BTracker/build/
+BTracker/!**/src/main/**/build/
+BTracker/!**/src/test/**/build/
+
+### VS Code ###
+BTracker/.vscode/
